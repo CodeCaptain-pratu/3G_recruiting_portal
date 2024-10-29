@@ -1,0 +1,125 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body
+{
+    height:100%;
+    width:100%;
+}
+#main
+{
+    background-color: #dadada;
+}
+#left
+{
+    background-color: #4338ca;
+    justify-content: space-between;
+}
+#logo img
+{
+    width:25%;
+    margin:0 auto;
+}
+#pages ul li:hover{
+    background-color:#312e81;
+}
+#team ul li:hover{
+    background-color:#312e81;
+}
+#setting ul li:hover{
+    background-color:#312e81;
+}
+#team ul li a i
+{
+    font-size: 0.55rem;
+    line-height: 1rem;
+    border-radius: 0.5rem;
+    background-color: #818cf8;
+    margin-right: 0.5rem;
+}
+#wrapper #right
+{
+    width:25%;
+}
+#wrapper #right
+{
+    width:75%;
+    height:auto;
+    padding: 1.25rem;
+}
+#right  #jobcards
+{
+    padding: 1.25rem;
+    height:auto;
+    width:full;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+#right  #jobcards #job 
+{ 
+    width:430px;
+    height:200px;
+    gap:1rem;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px black;
+}
+#right  #jobcards #job #top
+{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+#right  #jobcards #job #top #jobimg
+{
+    width:80px;
+    height:80px;   
+}
+#right  #jobcards #job #top #jobdescriptiontop
+{
+    gap:0.5rem;
+}
+#right  #jobcards #job #top #jobdescriptiontop #jobdescriptionbottom
+{
+    gap:10px;
+}
+#right #jobcards #job #bottom
+{
+    justify-content: space-between;
+    align-items: center;
+}
+#right #jobcards #job #bottom #rightjob button
+{
+    background-color:#4338ca; 
+    
+}
+#right #jobcards #job #bottom #rightjob button:hover
+{
+    background-color:#4f46e5;
+}
+/* user page */
+#usercards
+{
+
+    width:100%;
+    height:80%;
+    padding:1rem;
+}
+#user
+{
+    width:200px;
+    height:200px;
+    outline:1px solid green;
+    padding:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#buttons
+{
+    outline:1px solid red;
+    display: block;
+}
