@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "firstname": "test1",
+      "lastname": "test-user",
+      "password": "newpass",
+      "email": "naveen.ara@gmail.com",
+      "username": "test1",
+      "phone": "9654602735",
+      "active": 1
+    }
+  ]
+}

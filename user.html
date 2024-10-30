@@ -37,21 +37,22 @@
            </div>
        </div> 
        <div id="right" class="text-black" class="border border-black h-screen">
-           <div id="usercards" class="border border-black">
-               <div id="user" class="flex">
-                <h1 class="text-sm bg-red-800">FIRSTNAME</h1>
-                <p>lastname</p>
-                <p>password</p>
-                <p>email</p>
-                <p>username</p>
-                <p>phone</p>
-                <p>active</p>
-               </div>
-              <div id="buttons">
-                    <button class="border border-black">Add users</button>
-                    <button>Remove users</button>
-              </div>
-           </div>
+        <div id="usercards">
+            <div class="user-card" data-user-id="1">
+              <h1 class="text-sm bg-red-800">John</h1>
+              <p>Lastname: Doe</p>
+              <p>Password: secret</p>
+              <p>Email: john@example.com</p>
+              <p>Username: johndoe</p>
+              <p>Phone: 1234567890</p>
+              <p>Active: 1</p>
+            </div>
+          </div>
+          
+        <div id="buttons" class="mt-4">
+            <button onclick="addUserToUI(exampleUser)" class="border border-black p-2 mr-2">Add User</button>
+            <button onclick="deleteUser()" class="border border-black p-2">Remove User</button>
+        </div>
        </div>
    </div>
   <script src="user.js"></script>
