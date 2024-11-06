@@ -1,56 +1,89 @@
-const apiUrl = 'http://localhost:3000/users'; // Replace with your actual API URL
-
-const exampleUser = {
-    id: 1,
-    firstname: "John",
-    lastname: "Doe",
-    password: "secret",
-    email: "john@example.com",
-    username: "johndoe",
-    phone: "1234567890",
-    active: 1
-};
-
-function addUserToUI(user) {
-    const userContainer = document.getElementById("usercards");
-    const userDiv = document.createElement("div");
-    userDiv.classList.add("user-card");
-    userDiv.dataset.userId = user.id; // Set the user ID in dataset
-    userDiv.innerHTML = `
-        <h1 class="text-sm bg-red-800">${user.firstname}</h1>
-        <p>Lastname: ${user.lastname}</p>
-        <p>Password: ${user.password}</p>
-        <p>Email: ${user.email}</p>
-        <p>Username: ${user.username}</p>
-        <p>Phone: ${user.phone}</p>
-        <p>Active: ${user.active}</p>
-    `;
-    userContainer.appendChild(userDiv);
-}
-
-async function deleteUser() {
-    try {
-        const userContainer = document.getElementById("usercards");
-        const userToDelete = userContainer.firstChild; 
-
-        if (userToDelete) {
-
-            console.log("User ID to delete:", userId); 
-
-            const response = await fetch(`${apiUrl}/${userId}`, { method: 'DELETE' });
-
-            if (response.ok) {
-                userToDelete.remove(); 
-                console.log("User deleted successfully");
-            } else {
-                console.log("Failed to delete user:", response.statusText);
-            }
-        } else {
-            console.log("No users to delete");
-        }
-    } catch (error) {
-        console.error("Error deleting user:", error);
+let users = [
+    {
+        "id": "1",
+        "firstname": "John",
+        "lastname": "Doe",
+        "password": "newpass",
+        "email": "naveen.ara@gmail.com",
+        "username": "test1",
+        "phone": "9654602735",
+        "active": 1
+    },
+    {
+        "id": "2",
+        "lastname": "another-user",
+        "password": "password123",
+        "email": "another@example.com",
+        "username": "test2",
+        "phone": "9876543210",
+        "active": 1
+    },
+    {
+        "id": "3",
+        "firstname": "test3",
+        "lastname": "third-user",
+        "password": "pass456",
+        "email": "third@example.com",
+        "username": "test3",
+        "phone": "1234567890",
+        "active": 0
+    },
+    {
+        "id": "4",
+        "firstname": "test3",
+        "lastname": "third-user",
+        "password": "pass456",
+        "email": "third@example.com",
+        "username": "test3",
+        "phone": "1234567890",
+        "active": 0
     }
-}
+];
 
-addUserToUI(exampleUser);
+let addUserBtn = document.querySelector("#usertitleright button");
+let tableBody = document.querySelector("#tablebody");
+
+// function loadSavedData()
+// {
+//     let savedUsers=JSON.parse(localStorage.getItem("savedUsers"))||[];
+//     savedUsers.forEach(user => {
+//         addUserRow(user);
+//     });
+// }
+function addUserRow(user)
+{
+    let newRow=`<tr>
+                    <td class="p-2">${user.id}</td>
+                    <td class="p-2">${user.firstname}</td>
+                    <td class="p-2">${user.lastname}</td>
+                    <td class="p-2">${user.password}</td>
+                    <td class="p-2">${user.email}</td>
+                    <td class="p-2">${user.username}</td>
+                    <td class="p-2">${user.phone}</td>
+                    <td class="p-2">${user.active}</td>
+                </tr>`;
+        tableBody.innerHTML+=newRow;
+}
+addUserBtn.addEventListener("click",function()
+{
+    // let userIndex=JSON.parse(localStorage.getItem("userIndex"))||0;
+    let userIndex=0;
+    if(userIndex<users.length)
+    {
+        let user=users[userIndex];
+        addUserRow(user);
+
+        // let savedUsers=JSON.parse(localStorage.getItem("savedUsers"))||[];
+        // savedUsers.push(user);
+        // localStorage.setItem("savedUsers",JSON.stringify("savedUsers"));
+
+        userIndex++;
+        // localStorage.setItem("userIndex",JSON.stringify("userIndex"));
+    }
+    else
+    {
+        alert("No more users to add");
+    }
+})
+// window.addEventListener("load",loadSavedData);
+

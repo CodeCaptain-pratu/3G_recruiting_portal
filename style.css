@@ -100,35 +100,56 @@ html,body
     background-color:#4f46e5;
 }
 /* user page */
+.userclass
+{
+    /* outline: 3px solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
 #usercards
 {
-
+    /* outline:1px solid green; */
     width:100%;
     height:80%;
-    padding:1rem;
 }
-#user
+#usertitle
 {
-    width:200px;
-    height:200px;
-    outline:1px solid green;
-    padding:1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* outline:1px solid brown; */
+    justify-content: space-between;
 }
-#buttons
+#usertitle #usertitleleft h1
 {
-    outline:1px solid red;
-    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-/* USER  */
-.user-card {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-  }
+#usertitle #usertitleright button
+{
+    background-color: #4f46e5;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 0.485rem;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+
+}
+table {
+    width: 100%;
+    text-align:left;
+}
+td:nth-child(1),
+td:nth-child(2), 
+td:nth-child(3){
+    color: black; 
+    font-weight: 600;
+}
+td
+{
+    color:#64748b;  
+}
+tr
+{
+    border-bottom:1px solid #64748b;
+}
