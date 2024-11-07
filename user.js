@@ -43,13 +43,6 @@ let users = [
 let addUserBtn = document.querySelector("#usertitleright button");
 let tableBody = document.querySelector("#tablebody");
 
-// function loadSavedData()
-// {
-//     let savedUsers=JSON.parse(localStorage.getItem("savedUsers"))||[];
-//     savedUsers.forEach(user => {
-//         addUserRow(user);
-//     });
-// }
 function addUserRow(user)
 {
     let newRow=`<tr>
@@ -66,24 +59,18 @@ function addUserRow(user)
 }
 addUserBtn.addEventListener("click",function()
 {
-    // let userIndex=JSON.parse(localStorage.getItem("userIndex"))||0;
     let userIndex=0;
     if(userIndex<users.length)
     {
         let user=users[userIndex];
         addUserRow(user);
 
-        // let savedUsers=JSON.parse(localStorage.getItem("savedUsers"))||[];
-        // savedUsers.push(user);
-        // localStorage.setItem("savedUsers",JSON.stringify("savedUsers"));
 
         userIndex++;
-        // localStorage.setItem("userIndex",JSON.stringify("userIndex"));
     }
     else
     {
         alert("No more users to add");
     }
 })
-// window.addEventListener("load",loadSavedData);
 
