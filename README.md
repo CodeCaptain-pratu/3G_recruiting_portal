@@ -5,10 +5,9 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 
 * **Quick summary**    
-  User api service supports users management and authentication process.
+  HRMS UI App
 * **Version**    
   v1
-
 
 # 3G Recruiting Portal
 
@@ -21,50 +20,31 @@ This project is a recruiting portal developed to streamline the hiring process, 
 
 ## Getting Started
 
-### Step 1: Clone the Repository
-
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/CodeCaptain-pratu/3G_recruiting_portal.git
-cd 3G_recruiting_portal
-
 ### How do I get set up? ###
-
 * **Summary of set up**     
-  1.) softwares required:  
-  &nbsp;&nbsp;&nbsp;&nbsp; Java version "17.0.11", maven-3.9.8, mysql-5.5, Eclipse/Intellij, git    
-  2.) git clone https://naveenara@bitbucket.org/naveenara/user-api.git  
-  3.) build project - mvn clean install  
-  4.) run **UserApplication.java** with main method  
-  &nbsp;&nbsp;&nbsp;&nbsp; user-api\src\main\java\org\cas\user\UserApplication.java  
-  5.) verify application running status by calling below api:  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://localhost:8080/v1/users/api/get  
-      
-    
-***Configuration**  
-  Application configuration can be found in properties file - user-api\src\main\resources\application.properties  
-  e.g - server.port=8080  
+  1.) install visual studio IDE and node.js  
+  2.) git clone https://github.com/CodeCaptain-pratu/3G_recruiting_portal.git  
+  3.) clear any existing cache - **npm cache clean --force**  
+  4.) install build tool and development server vite - **npm install -g vite**   
+  5.) install 3rd party dependencies - **npm install**  
+  6.) start app - **npm run dev**   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VITE v5.4.10  ready in 230 ms  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Local:   http://localhost:5173/
+
+* **Configuration**  
+  TBC
     
     
-***Dependencies**  
+* **Dependencies**  
   NA  
+     
     
-    
-***Database configuration**  
-  Mysql data configuration can be found in properties file - user-api\src\main\resources\application.properties  
-    
-    
-***How to run tests**  
+* **How to run tests**  
   TBC  
     
     
-***Deployment instructions**  
-  If mvn clean install is successfull, application jar will be created - user-api\target\user-0.0.1-SNAPSHOT.jar  
-  Copy jar file to aws server  
-  nohup java -jar user-0.0.1-SNAPSHOT.jar 2>&1 >> logfile.log &  
-  
-  
+* **Deployment instructions**  
+  TBC
 
 ### Contribution guidelines ###
 
@@ -76,3 +56,17 @@ cd 3G_recruiting_portal
 
 * Repo owner or admin
 * Other community or team contact
+
+
+### Step 1: Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/CodeCaptain-pratu/3G_recruiting_portal.git
+cd 3G_recruiting_portal    
+    
+    
+***Database configuration**  
+  Mysql data configuration can be found in properties file - user-api\src\main\resources\application.properties  
+          
