@@ -78,3 +78,27 @@ function addUserData()
 {
     window.location.href="AddUserForm.html";
 }
+function loadUsers() {
+    let users = JSON.parse(localStorage.getItem("users")) || []; // Retrieve users from localStorage
+// console.log(users);
+    let tableBody = document.getElementById("tablebody");
+    tableBody.innerHTML = ""; // Clear any existing rows
+
+    users.forEach(user => {
+        let row = document.createElement("tr");
+        row.innerHTML = `
+            <td class="p-2">${user.id}</td>
+            <td class="p-2">${user.firstname}</td>
+            <td class="p-2">${user.lastname}</td>
+            <td class="p-2">${user.password}</td>
+            <td class="p-2">${user.email}</td>
+            <td class="p-2">${user.username}</td>
+            <td class="p-2">${user.phone}</td>
+            <td class="p-2 text-sla">${user.active}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+// Load the users when the page loads
+window.addEventListener("load", loadUsers);
