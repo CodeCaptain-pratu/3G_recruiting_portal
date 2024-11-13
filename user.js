@@ -74,7 +74,7 @@
 //     }
 // })
 
-// function addUserData()
-// {
-//     window.location.href="AddUserForm.html";
-// }
+function addUserData()
+{
+    window.location.href="AddUserForm.html";
+}
