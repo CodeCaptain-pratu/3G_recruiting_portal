@@ -9,7 +9,6 @@ This README would normally document whatever steps are necessary to get your app
 * **Version**    
   v1
 
-
 # 3G Recruiting Portal
 
 This project is a recruiting portal developed to streamline the hiring process, allowing for efficient job posting, candidate applications, and applicant tracking.
@@ -22,7 +21,7 @@ This project is a recruiting portal developed to streamline the hiring process, 
 ## Getting Started
 
 ### How do I get set up? ###
-  
+
 * **Summary of set up**     
   1.) install visual studio IDE and node.js  
   2.) git clone https://github.com/CodeCaptain-pratu/3G_recruiting_portal.git  
@@ -32,12 +31,13 @@ This project is a recruiting portal developed to streamline the hiring process, 
   6.) start app - **npm run dev**   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VITE v5.4.10  ready in 230 ms  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Local:   http://localhost:5173/
-      
+  
     
 * **Configuration**  
   TBC
+  
     
-    
+  
 * **Dependencies**  
   NA  
      
@@ -48,8 +48,6 @@ This project is a recruiting portal developed to streamline the hiring process, 
     
 * **Deployment instructions**  
   TBC
-  
-  
 
 ### Contribution guidelines ###
 
@@ -61,3 +59,14 @@ This project is a recruiting portal developed to streamline the hiring process, 
 
 * Repo owner or admin
 * Other community or team contact
+
+
+### Step 1: Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/CodeCaptain-pratu/3G_recruiting_portal.git
+cd 3G_recruiting_portal    
+    
+          

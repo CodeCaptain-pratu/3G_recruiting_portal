@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body style="background-color: #111; color:#fff;">
+    <div id="form_container" class="border flex justify-center w-full h-screen items-center">
+        <form action="" class="w-3/4 h-3/4 flex flex-col gap-10 p-4">
+            <h1 class="text-2xl m-2 text-center pb-4 font-semibold">Please Enter The Details Below </h1>
+            
+            <div id="inputcontainer" class="w-full flex flex-col gap-4">
+               <h1 class="font-bold">Name</h1>
+               <div id="inputelement" class="flex">
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="text" name="firstname" id="firstname" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Firstname</p>
+                    </div>
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="text" name="lastname" id="lastname" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Lastname</p>
+                    </div>
+               </div> 
+            </div>
+            <div id="inputcontainer" class="w-full flex flex-col gap-4">
+                <h1 class="font-bold">Enter Password and Email </h1>
+                <div id="inputelement" class="flex">
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="password" name="password" id="password" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Password</p>
+                    </div>
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="email" name="email" id="email" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Email</p>
+                    </div>
+                </div>
+            </div>
+            <div id="inputcontainer" class="w-full flex flex-col gap-4">
+                <h1 class="font-bold">Enter Username and Phone</h1>
+                <div id="inputelement" class="flex">
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="text" name="username" id="username" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Username</p>
+                    </div>
+                    <div class="w-1/2 flex flex-col gap-2">
+                        <input type="number" name="phone" id="phone" class="border border-slate-700 bg-slate-800 rounded w-3/4 h-9">
+                        <p class="font-semibold text-slate-400">Phone Number</p>
+                    </div>
+                </div>
+            </div>           
+            <div class="flex">
+                <button class="bg-indigo-600 px-4 py-2 rounded hover:bg-indigo-500 font-bold" onclick="addrowdata()">SAVE</button>
+            </div>
+        </form>
+    </div>
+    <script src="AddUserForm.js"></script>
+</body>
+</html>
