@@ -5,28 +5,39 @@ import Loadable from './../components/Loadable';
 import MinimalLayout from '../layout/MinimalLayout';
 //import Dashboard from 'layout/Dashboard';
 
-//const Color = Loadable(lazy(() => import('pages/component-overview/color')));
-//const Typography = Loadable(lazy(() => import('pages/component-overview/typography')));
-//const Shadow = Loadable(lazy(() => import('pages/component-overview/shadows')));
-//const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/index')));
-
 // render - sample page
 const Users = Loadable(lazy(() => import('./../components/user/users/users')));
 const CreateUser = Loadable(lazy(() => import('./../components/user/create/create-user')));
+const Dashboard = Loadable(lazy(() => import('./../components/dashboard/dashboard')));
+
+const Company = Loadable(lazy(() => import('./../components/company/company')));
+const Report = Loadable(lazy(() => import('./../components/report/report')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
 const ProtectedRoutes = {
-  path: '/',
+  path: '/hrms',
   element: <MinimalLayout />,
   children: [
     {
-      path: '/create-user',
+      path: 'dashboard',
+      element: <Dashboard />
+    },
+    {
+      path: 'create-user',
       element: <CreateUser />
     },
     {
-      path: '/users',
+      path: 'users',
       element: <Users />
+    },
+    {
+      path: 'company',
+      element: <Company />
+    },
+    {
+      path: 'report',
+      element: <Report />
     }
   ]
 };

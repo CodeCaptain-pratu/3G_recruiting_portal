@@ -11,7 +11,7 @@ const Login = Loadable(lazy(() => import('./../components/user/login/login')));
 
 const PublicRoutes = {
   path: '/',
-  element: <MinimalLayout />,
+  
   children: [
     {
       path: '/login',
