@@ -1,12 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
+import router from './../../routes';
 
 export default function LHS() {
+
+    useEffect(() => {
+        console.log('LHS component reloaded');
+    });
     
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const route = (e, link) => {
-        navigate(link);
+        router.navigate(link);
     }
 
     return (

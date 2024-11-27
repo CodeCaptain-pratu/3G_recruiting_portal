@@ -24,7 +24,7 @@ export default function Login() {
 
         axios.post(API_URL + '/v1/users/api/public/login', formData, {headers: headers})
           .then(response => {
-            console.log(response);
+            //console.log(response);
             localStorage.setItem('token', response.data.data);
             setErrorMessage('');
             navigate('/hrms/dashboard');
