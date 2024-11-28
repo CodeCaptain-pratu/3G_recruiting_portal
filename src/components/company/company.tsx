@@ -1,6 +1,6 @@
 import React, {Component, useEffect} from 'react';
 
-export default function Company() {
+function Company() {
 
     useEffect(() => {
         console.log('company component is loaded');
@@ -10,3 +10,5 @@ export default function Company() {
         <div className="border-2 border-green-600 p-4 m-2"> display company page </div>
     );
   }
+
+export default Company;
