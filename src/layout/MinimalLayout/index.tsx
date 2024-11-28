@@ -37,7 +37,7 @@ export default function MinimalLayout() {
 
   return (
     <div>
-      <Header />
+      <Header/>
       <LHS />
       <Outlet />
       <Footer />
