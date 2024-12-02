@@ -44,15 +44,15 @@ export default function Login() {
         <div className="w-full h-screen flex justify-center items-center">
             <div className="w-1/2 h-screen flex justify-center flex-col items-center">
                 <div className="w-1/2 flex justify-center items-center flex-col">
-                    <div className="flex justify-center items-center w-1/3">
+                    <div className="flex justify-center items-center w-1/3 bg-white rounded-full">
                         <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=206,fit=crop,q=95/AwvrzaMvGJIDZLVR/3g-infotech-avl334obqbcvdpv6__1_-removebg-preview-YBgpPZv49xcWVGzy.png" alt="3G infotech services logo" />
                     </div>
-                    <h1 className="text-2xl font-semibold p-2 mb-4 text-center">
+                    <h1 className="text-2xl font-semibold p-2 mb-4 text-center text-white">
                         Sign in to your account
                     </h1>
                 </div>        
                 <div className="w-1/2 flex justify-center flex-col">
-                    <form className="flex flex-col" onSubmit={handleSubmit}>
+                    <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
                         <label htmlFor="username" className="mb-2 text-md text-slate-800 font-medium text-gray-900 dark:text-white">
                             Username :
                         </label>
