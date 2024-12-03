@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header className="antialiased m-2 border-2 border-indigo-600 flex justify-between items-center">
             <nav className="bg-white lg:px-6 py-2.5 w-4/5 flex justify-between items-center">
-                <img className='text-2xl w-20' src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=206,fit=crop,q=95/AwvrzaMvGJIDZLVR/3g-infotech-avl334obqbcvdpv6__1_-removebg-preview-YBgpPZv49xcWVGzy.png"/>
+                <img className='text-2xl w-20 bg-slate-100 rounded-full p-2' src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=206,fit=crop,q=95/AwvrzaMvGJIDZLVR/3g-infotech-avl334obqbcvdpv6__1_-removebg-preview-YBgpPZv49xcWVGzy.png"/>
                 <p className='text-lg'>Username</p>
             </nav>
 
