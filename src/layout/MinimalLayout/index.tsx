@@ -44,8 +44,10 @@ export default function MinimalLayout() {
   return (
     <>
       <Header />
-      <LHS />
-      <Outlet />
+      <div className="flex m-2 border-2 border-indigo-600 h-80">
+        <LHS />
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
