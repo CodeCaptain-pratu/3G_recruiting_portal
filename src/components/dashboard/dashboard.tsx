@@ -7,7 +7,7 @@ export default function Dashboard() {
     });
 
     return (
-        <div className="border-2 border-green-600 p-4 m-2 w-3/4"> dashboard content </div>
+        <div className="border-2 border-green-600 p-4 m-2"> dashboard content </div>
     );
 
 }
