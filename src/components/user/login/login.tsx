@@ -47,7 +47,7 @@ export default function Login() {
                     <div className="flex justify-center items-center w-1/3 bg-white rounded-full">
                         <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=206,fit=crop,q=95/AwvrzaMvGJIDZLVR/3g-infotech-avl334obqbcvdpv6__1_-removebg-preview-YBgpPZv49xcWVGzy.png" alt="3G infotech services logo" />
                     </div>
-                    <h1 className="text-2xl font-semibold p-2 mb-4 text-center text-white">
+                    <h1 className="text-2xl font-semibold p-2 mb-4 text-center">
                         Sign in to your account
                     </h1>
                 </div>        
@@ -61,7 +61,7 @@ export default function Login() {
                             value = {formData.username}
                             onChange={handleChange}
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/> 
-                        <br />
+                     
                         
                         <label htmlFor="password" className="mb-2 text-md text-slate-900 font-medium text-gray-900 dark:text-white">Password : </label>
                         <input type="password" name="password" placeholder="Enter your password here"
@@ -69,7 +69,7 @@ export default function Login() {
                             onChange={handleChange}
                             
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/> 
-                        <br />
+                     
                         
                         <button type="submit" className="bg-indigo-600 p-2 rounded-md text-white font-bold hover:bg-indigo-500" id="submit">Sign in</button>
                         <p id="error" className="absolute top-6 left-auto bg-red-600 p-2 rounded-md text-white hidden font-semibold">error</p>
